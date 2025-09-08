@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQs -  Driving School</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <!-- Navigation Bar -->
+      <nav class="nav-panel">
+        <a href="index.html" class="nav-links">Home</a>
+        <a href="services.html" class="nav-links">Services</a>
+        <a href="pricing.html" class="nav-links">Pricing</a>
+        <a href="about.html" class="nav-links">About</a>
+      </nav>
+  </header>
+
+  <section class="faq-intro">
+    <h1>Frequently Asked Questions</h1>
+    <p>Find answers to common questions about our driving lessons and services.</p>
+  </section>
+
+  <main class="faq-section">
+    <div class="faq">
+      <h3>Do I need any documents to start lessons?</h3>
+      <p>Yes. You'll need a valid South African ID or passport and proof of residence.</p>
+    </div>
+    <div class="faq">
+      <h3>Can I book a lesson without a learner’s license?</h3>
+      <p>You can book theory lessons, but you’ll need a learner’s license before practical driving can begin.</p>
+    </div>
+    <div class="faq">
+      <h3>How do I make payments?</h3>
+      <p>You can pay via cash, EFT, or using your preferred mobile banking service. Deposits are required before lessons start.</p>
+    </div>
+    <div class="faq">
+      <h3>How long does a lesson last?</h3>
+      <p>Lesson durations vary by course: beginner lessons are usually 30–60 minutes per session.</p>
+    </div>
+    <div class="faq">
+      <h3>Can I hire a car for my test?</h3>
+      <p>Yes, car/truck hire is available for your driving test, depending on the package you select.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Driving School. All rights reserved.<br/>Powered by Peacemaker Dev</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

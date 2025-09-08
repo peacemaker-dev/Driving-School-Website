@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book a Lesson -  Driving School</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <!-- Navigation Bar -->
+      <nav class="nav-panel">
+        <a href="index.html" class="nav-links">Home</a>
+        <a href="services.html" class="nav-links">Services</a>
+        <a href="pricing.html" class="nav-links">Pricing</a>
+        <a href="about.html" class="nav-links">About</a>
+      </nav>
+  </header>
+
+  <section class="booking-page-intro">
+    <h1>Book a Lesson</h1>
+    <p>Fill in your details to schedule a driving lesson with us.</p>
+  </section>
+
+  <main>
+    <section class="booking-form-section">
+      <form class="booking-form" action="#" method="post">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="email">Email (optional):</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="service">Select Lesson Type:</label>
+        <select id="service" name="service" required>
+          <option value="">-- Please Select --</option>
+          <option value="learners">Learner's License Training</option>
+          <option value="beginner">Beginner Driving Lessons</option>
+          <option value="senior">Senior Driving Lessons</option>
+          <option value="commercial">Commercial License Lessons</option>
+          <option value="test-prep">Test Preparation</option>
+          <option value="refresher">Refresher Course</option>
+        </select>
+
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="time">Preferred Time:</label>
+        <input type="time" id="time" name="time" required />
+
+        <label for="notes">Additional Notes:</label>
+        <textarea id="notes" name="notes" rows="4" placeholder="Anything else we should know?"></textarea>
+
+        <button type="submit">Submit Booking Request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Driving School. All rights reserved.<br/>Powered by Peacemaker Dev</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

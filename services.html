@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services -  Driving School</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <!-- Navigation Bar -->
+      <nav class="nav-panel">
+        <a href="index.html" class="nav-links">Home</a>
+        <a href="services.html" class="nav-links">Services</a>
+        <a href="pricing.html" class="nav-links">Pricing</a>
+        <a href="about.html" class="nav-links">About</a>
+      </nav>
+  </header>
+  
+  <section class="service-intro">
+     <h1>Our Services</h1>
+     <h4>We offer a range of driving services tailored to different levels and needs.</h4>
+  </section>
+  
+  <main class="services-main-content">
+    <!-- Services Offered -->
+      <section class="service">
+        <div class="service-text">
+          <h3>Learner's License Training</h3>
+          <p>Master the theory with lessons on road signs, rules, and mock tests to prepare for your learner's exam.</p>
+          <a class="service-cta" href="booking.html">Book Now</a>
+        </div>
+        <div class="service-image">
+          <img src="images/road-signs.png" alt="Road signs training" />
+        </div>
+      </section>
+      
+      <section class="service">
+        <div class="service-text">
+          <h3>Beginner Driving Lessons</h3>
+          <p>Build confidence from the ground up with practical, easy-to-follow driving lessons for first-time drivers.</p>
+          <a class="service-cta" href="booking.html">Book Now</a>
+        </div>
+        <div class="service-image">
+          <img src="images/happy-begginer.jpeg" alt="Beginner driving lessons" />
+        </div>
+      </section>
+
+      <section class="service">
+        <div class="service-text">
+          <h3>Senior Driving Lessons</h3>
+          <p>Patient, flexible training designed for older learners who want to start driving or refresh their skills.</p>
+          <a class="service-cta" href="booking.html">Book Now</a>
+        </div>
+        <div class="service-image">
+          <img src="images/happy-senior.jpeg" alt="Senior driving lessons" />
+        </div>
+      </section>
+
+      <section class="service">
+        <div class="service-text">
+          <h3>Commercial License Lessons</h3>
+          <p>Get professional Code 10/14 training for trucks or buses, with focus on safety, control, and passing the license test.</p>
+          <a class="service-cta" href="booking.html">Book Now</a>
+        </div>
+        <div class="service-image">
+          <img src="images/truck.jpeg" alt="Commercial license training" />
+        </div>
+      </section>
+
+      <section class="service">
+        <div class="service-text">
+          <h3>Refresher Lessons</h3>
+          <p>For licensed drivers who haven't driven in a while, sharpen your skills and get comfortable on the road again.</p>
+          <a class="service-cta" href="booking.html">Book Now</a>
+        </div>
+        <div class="service-image">
+          <img src="images/refresher.jpeg" alt="Refresher lessons" />
+        </div>
+      </section>
+
+      <section class="service">
+        <div class="service-text">
+          <h3>Test Day Preparation</h3>
+          <p>Final polish before the big day, simulate your test route and correct mistakes with your instructor by your side.</p>
+          <a class="service-cta" href="booking.html">Book Now</a>
+        </div>
+        <div class="service-image">
+          <img src="images/stressed.jpg" alt="Test day preparation" width="300"/>
+        </div>
+      </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Driving School. All rights reserved.<br/>Powered by Peacemaker Dev</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

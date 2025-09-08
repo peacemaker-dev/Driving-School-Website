@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Driving School - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="main-header">
+    <!-- Navigation Bar -->
+    <nav class="nav-panel">
+      <a href="index.html" class="nav-links">Home</a>
+      <a href="services.html" class="nav-links">Services</a>
+      <a href="pricing.html" class="nav-links">Pricing</a>
+      <a href="about.html" class="nav-links">About</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Shift Gears to Success <br/>with <br/><span class="company-name">_ Driving School</span></h1>
+      <div class="cta-buttons">
+        <a class="cta-btn" href="booking.html">Book Now</a>
+        <a class="cta-btn" href="tel:0791681131">Contact Us</a>
+      </div>
+    </div>
+    <div class="car-box">
+      <img src="images/car.png" alt="Driving School Car" width="450" height="300">
+    </div>
+  </section>
+
+  <!-- Small Introduction -->
+  <section class="welcome-section">
+    <h2>Welcome to</h2>
+    <h1>_DRIVING SCHOOL</h1>
+    <p>With years of experience and a learner-first approach, we're dedicated to shaping safe and confident drivers. From your first lesson to your license, we'll be with you every step of the way.
+      <a class="about-nav-link" href="about.html">Learn more</a>
+    </p>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services">
+    <h2 class="section-title">What We Offer</h2>
+    <div class="services-banner">
+      <div class="service-card">
+        <span class="service-icon">📘</span>
+        <h4>Learner's License Classes</h4>
+        <p>Comprehensive lessons on road signs, traffic rules, and test preparation.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">🚗</span>
+        <h4>Beginner Driving Lessons</h4>
+        <p>Patient and personalized instruction for new drivers</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">👴</span>
+        <h4>Senior Driving Lessons</h4>
+        <p>Refresher courses and confidence-building sessions for senior drivers.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">🚚</span>
+        <h4>Commercial Licenses</h4>
+        <p>Specialized training programs for Code 10 and Code 14 licenses.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Reasons -->
+  <section class="why-us">
+    <h2 class="section-title">Why Choose Us?</h2>
+    <div class="reasons-grid">
+      <div class="reason">😊 Friendly and professional instructors</div>
+      <div class="reason">📈 Proven track record of success</div>
+      <div class="reason">🕒 Lessons that fit your schedule</div>
+      <div class="reason">🚗 Complimentary pickup and drop-off</div>
+      <div class="reason">💰 Quality training at fair prices</div>
+      <div class="reason">📆 Easy monthly installment options</div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <h2 class="section-title">What Our Students Say</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial">
+        <p>Driving School helped me pass on the first try!</p>
+        <strong>- Thabiso M.</strong>
+      </div>
+      <div class="testimonial">
+        <p>The instructors are so patient and professional.</p>
+        <strong>- Senzo N.</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Form Section -->
+  <section class="booking-form">
+    <h2>Quick Booking</h2>
+    <form action="submit-booking.php" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <select name="service">
+        <option value="">Select a Service</option>
+        <option value="learner">Learner's License</option>
+        <option value="license">Driver's License</option>
+        <option value="commercial">Commercial License</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Frequently Asked Questions Section -->
+  <section class="faqs">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h4>What do I need to start driving lessons?</h4>
+      <p>You need a valid learner's license and proof of identification.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Do you offer weekend classes?</h4>
+      <p>Yes, we have flexible weekend slots available.</p>
+    </div>
+    <p class="faq-text">Got Questions? See more <a href="faq.html" class="faq-link">FAQs</a></p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <img src="images/logo.png" alt=" Driving School Logo" width="150"/>
+    <h2>Contact Us</h2>
+    <div class="contact-links">
+      <a href="tel:0791681131">Call: 079-168-1131</a>
+      <a href="https://wa.me/2779168131" target="_blank">WhatsApp</a>
+      <a href="mailto:mlamulipeace01@gmail.com">Email Us</a>
+      <a href="https://www.facebook.com/profile.php?id=61577854126373&mibextid=ZbWKwL">Facebook</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Driving School. All rights reserved.<br/>Powered by Peacemaker Dev</p>
+  </footer>
+  <script>
+    /* Get Current Year */
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const carBox = document.querySelector(".car-box");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              carBox.classList.add("slide-in");
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
+
+      observer.observe(carBox);
+    });
+</script>
+</body>
+</html>
