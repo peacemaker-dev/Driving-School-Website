@@ -134,14 +134,14 @@ body {
 }
 
 .car-box {
-  opacity: 0;
-  transform: translateX(100px);
-  transition: all 0.8s ease-out;
+  /*opacity: 0;*/
+  /*transform: translateX(100px);*/
+  /*transition: all 0.8s ease-out;*/
   align-self: center;
 }
 
 .car-box.slide-in {
-  animation: slideInRight 1s ease-out forwards;
+  /*animation: slideInRight 1s ease-out forwards;*/
 }
 
 .car-box img {
